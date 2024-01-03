@@ -47,6 +47,12 @@ public class Program {
 			
 			System.out.printf("People under 16 old years: %.1f%%%n: ", percent);
 			
+			for(int i = 0; i < quantity_people; i++) {
+				if(ages[i] < 16) {
+					System.out.println(names[i]);
+				}
+			}
+			
 		} else {
 			System.out.println("Enter a value between 1 and 10!!");
 		}
